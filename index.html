@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>RS school CV</title>
+</head>
+<body>
+  <header class="header">
+    <figure class="photo">
+      <img
+        width="80"
+        height="80"
+        src="assets/img/cat_avatar.jpg"
+        alt="image of catlike man"
+      >
+    </figure>
+    <div class="header-content">
+      <h1 class="header-content--name">
+        Burima Evgenyi
+      </h1>
+      <small class="header-content--sub">frontend developer</small>
+    </div>
+  </header>
+  <main class="main-content">
+    <section class="english-level">
+      <h2 class="section-name">English level: A2</h2>
+    </section>
+    <section class="contacts">
+      <h2 class="section-name">contacts</h2>
+        <ul class="list">
+          <li class="list--item"><a href="mailto:cuksmail@gmail.com" class="link">Email</a></li>
+          <li class="list--item"><a href="https://t.me/ClancyGruver" class="link">Telegram</a></li>
+          <li class="list--item"><a href="https://github.com/clancyGruver" class="link">GitHub</a></li>
+        </ul>
+    </section>
+    <section class="skills">
+      <h2 class="section-name">skills</h2>
+      <section class="skills-group">
+        <h3 class="skills-group__name">Programming languages</h3>
+        <ul class="list">
+          <li class="list--item">HTML</li>
+          <li class="list--item">CSS</li>
+          <li class="list--item">JavaScript</li>
+          <li class="list--item">PHP</li>
+          <li class="list--item">Python</li>
+        </ul>
+      </section>
+      <section class="skills-group">
+        <h3 class="skills-group__name">Frameworks</h3>
+        <ul class="list">
+          <li class="list--item">Vue 2</li>
+          <li class="list--item">Vue 3</li>
+          <li class="list--item">React</li>
+          <li class="list--item">Laravel</li>
+        </ul>
+      </section>
+      <section class="skills-group">
+        <h3 class="skills-group__name">Databases</h3>
+        <ul class="list">
+          <li class="list--item">MySQL</li>
+          <li class="list--item">SQLite</li>
+        </ul>
+      </section>
+    </section>
+    <section class="experience">
+      <h2 class="section-name">experience</h2>
+      <ul class="experience-list">
+        <li class="experience-list--item">Frontend developer April 2021 - now</li>
+        <li class="experience-list--item">Emercom Russia July 2011 - April 2021</li>
+      </ul>
+    </section>
+    <section class="example">
+      <h2 class="section-name">Code example</h2>
+      <a href="https://www.codewars.com/kata/51fda2d95d6efda45e00004e" class="link ml-3">codewars</a>
+      <pre class="example-code">
+        <span class="example-code--blue">function</span> User() {
+          <span class="example-code--blue">this</span>.<span class="example-code--light-blue">rank</span> = -8;
+          <span class="example-code--blue">this</span>.<span class="example-code--light-blue">progress</span> = 0;
+          <span class="example-code--blue">this</span>.<span class="example-code--light-blue">incProgress</span> = function(value) {
+            if (value &lt; -8
+              || value > 8
+              || value === 0
+              || value !== parseInt(value)
+            )
+              throw 'Error. Incorrect value';
+            if (value > -1) value--;
+            let <span class="example-code--light-blue">newRank</span> = <span class="example-code--blue">this</span>.<span class="example-code--light-blue">rank</span>;
+            if (<span class="example-code--blue">this</span>.<span class="example-code--light-blue">rank</span> >- 1) <span class="example-code--light-blue">newRank</span>--;
+            let res = value - <span class="example-code--light-blue">newRank</span>;
+            let mark = 10 * Math.pow(res, 2);
+            if (res === 0) mark = 3;
+            if (res === -1) mark = 1;
+            if (res &lt; -1) mark = 0;
+            <span class="example-code--blue">this</span>.<span class="example-code--light-blue">progress</span> += mark;
+            if (<span class="example-code--blue">this</span>.<span class="example-code--light-blue">progress</span> > 100){
+              let step = Math.floor(<span class="example-code--blue">this</span>.<span class="example-code--light-blue">progress</span> * 0.01);
+              <span class="example-code--blue">this</span>.<span class="example-code--light-blue">progress</span> -= step * 100;
+                if (<span class="example-code--blue">this</span>.<span class="example-code--light-blue">rank</span> &lt; 0 && <span class="example-code--blue">this</span>.<span class="example-code--light-blue">rank</span> + step >= 0){
+                  step++;
+                }
+                <span class="example-code--blue">this</span>.<span class="example-code--light-blue">rank</span> += step;
+                <span class="example-code--blue">this</span>.<span class="example-code--light-blue">rank</span> = Math.min(8, <span class="example-code--blue">this</span>.<span class="example-code--light-blue">rank</span>);
+            }
+            if(<span class="example-code--blue">this</span>.<span class="example-code--light-blue">rank</span> === 8) <span class="example-code--blue">this</span>.<span class="example-code--light-blue">progress</span> = 0;
+          }
+        }
+      </pre>
+    </section>
+    <section class="education">
+      <h2 class="section-name">Education</h2>
+      <ul class="list">
+        <li class="list--item">2009 - 2013 <span class="univercity-name">South Ural institute of management and economics</span> - specialist software engineer</li>
+        </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <a class="footer-logo" href="https://github.com/clancyGruver/">
+        <img class="footer-logo" src="assets/img/GitHub_Logo_White.png" width="51" height="21"  alt="GitHub logo">
+      </a>
+      <a class="footer-logo" href="https://rs.school/js/">
+        <img class="footer-logo footer-logo--rsscool" src="assets/img/rsschool_logo.svg" width="51" height="19" alt="RS School logo">
+      </a>
+      <p>2021</p>
+    </div>
+  </footer>
+
+</body>
+</html>
