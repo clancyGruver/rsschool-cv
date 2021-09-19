@@ -8,7 +8,26 @@
   <title>RS school CV</title>
 </head>
 <body>
-  <header class="header">
+  
+<nav class="topnav" id="topnav">
+  <ul class="list">
+    <li class="list--item"><a href="#home" class="link">Home</a></li>
+    <li class="list--item"><a href="#english" class="link">English</a></li>
+    <li class="list--item"><a href="#contacts" class="link">Contacts</a></li>
+    <li class="list--item"><a href="#skills" class="link">Skills</a></li>
+    <li class="list--item"><a href="#expirience" class="link">Expirience</a></li>
+    <li class="list--item"><a href="#example" class="link">Code Example</a></li>
+    <li class="list--item"><a href="#education" class="link">Education</a></li>
+    <button class="topnav--icon" aria-label="Main Menu" id="topnav-icon">
+      <svg width="30" height="30" viewBox="0 0 100 100">
+        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+        <path class="line line2" d="M 20,50 H 80" />
+        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+      </svg>
+    </button>
+  </ul>
+</nav>
+  <header class="header" id="home">
     <figure class="photo">
       <img
         width="80"
@@ -25,10 +44,10 @@
     </div>
   </header>
   <main class="main-content">
-    <section class="english-level">
+    <section class="english-level" id="english">
       <h2 class="section-name">English level: A2</h2>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <h2 class="section-name">contacts</h2>
         <ul class="list">
           <li class="list--item"><a href="mailto:cuksmail@gmail.com" class="link">Email</a></li>
@@ -36,7 +55,7 @@
           <li class="list--item"><a href="https://github.com/clancyGruver" class="link">GitHub</a></li>
         </ul>
     </section>
-    <section class="skills">
+    <section class="skills" id="skills">
       <h2 class="section-name">skills</h2>
       <section class="skills-group">
         <h3 class="skills-group__name">Programming languages</h3>
@@ -65,14 +84,14 @@
         </ul>
       </section>
     </section>
-    <section class="experience">
+    <section class="experience"  id="expirience">
       <h2 class="section-name">experience</h2>
       <ul class="experience-list">
         <li class="experience-list--item">Frontend developer April 2021 - now</li>
         <li class="experience-list--item">Emercom Russia July 2011 - April 2021</li>
       </ul>
     </section>
-    <section class="example">
+    <section class="example" id="example">
       <h2 class="section-name">Code example</h2>
       <a href="https://www.codewars.com/kata/51fda2d95d6efda45e00004e" class="link ml-3">codewars</a>
       <pre class="example-code">
@@ -109,7 +128,7 @@
         }
       </pre>
     </section>
-    <section class="education">
+    <section class="education" id="education">
       <h2 class="section-name">Education</h2>
       <ul class="list">
         <li class="list--item">2009 - 2013 <span class="univercity-name">South Ural institute of management and economics</span> - specialist software engineer</li>
@@ -125,9 +144,9 @@
       <a class="footer-logo" href="https://rs.school/js/">
         <img class="footer-logo footer-logo--rsscool" src="assets/img/rsschool_logo.svg" width="51" height="19" alt="RS School logo">
       </a>
-      <p>2021</p>
+      <h6>2021</h6>
     </div>
   </footer>
-
+  <script src="main.js"></script>
 </body>
 </html>
